@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{B1A3F540-9574-4414-B457-E6950E4E4795}"
+	ProjectSection(SolutionItems) = preProject
+		resources\credentials_spec.json = resources\credentials_spec.json
+		resources\install-plugin.ps1 = resources\install-plugin.ps1
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiftyNine.CCG.KeyVault.Tests", "src\FiftyNine.CCG.KeyVault.Tests\FiftyNine.CCG.KeyVault.Tests.csproj", "{35C50E96-C0E1-4A22-9FC0-1E4D48920F0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiftyNine.CCG.KeyVault", "src\FiftyNine.CCG.KeyVault\FiftyNine.CCG.KeyVault.csproj", "{FD2F111A-DF3E-49B0-B0A7-4FEEAA681FE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C50E96-C0E1-4A22-9FC0-1E4D48920F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35C50E96-C0E1-4A22-9FC0-1E4D48920F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35C50E96-C0E1-4A22-9FC0-1E4D48920F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35C50E96-C0E1-4A22-9FC0-1E4D48920F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35C50E96-C0E1-4A22-9FC0-1E4D48920F0C}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{35C50E96-C0E1-4A22-9FC0-1E4D48920F0C}.Test|Any CPU.Build.0 = Test|Any CPU
+		{FD2F111A-DF3E-49B0-B0A7-4FEEAA681FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2F111A-DF3E-49B0-B0A7-4FEEAA681FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2F111A-DF3E-49B0-B0A7-4FEEAA681FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2F111A-DF3E-49B0-B0A7-4FEEAA681FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2F111A-DF3E-49B0-B0A7-4FEEAA681FE7}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{FD2F111A-DF3E-49B0-B0A7-4FEEAA681FE7}.Test|Any CPU.Build.0 = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2131B24-2285-43DB-B137-EAA95F0453A4}
+	EndGlobalSection
+EndGlobal
