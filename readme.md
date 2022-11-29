@@ -1,6 +1,6 @@
 # CCG plug-in for KeyVault
 
-This repo contains the code for a Container Credentials Guard plug-in that enables you to store gMSA account retrieval credentials in Azure KeyVault, and use Managed Identities to access it.
+This repo contains the code for a Container Credentials Guard plug-in that enables you to store gMSA account retrieval credentials in Azure KeyVault, and use Managed Identities to access it. It is based on the PoC created by [Andrew Stakhov](https://stakhov.pro/), located at https://github.com/macsux/gmsa-ccg-plugin.
 
 ## Usage
 
