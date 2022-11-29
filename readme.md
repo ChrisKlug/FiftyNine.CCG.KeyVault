@@ -4,7 +4,7 @@ This repo contains the code for a Container Credentials Guard plug-in that enabl
 
 ## Usage
 
-To use the plug-in, it needs to be registered on the server. This is done using the [install-plugin.ps1](./resources/install-plugin.ps1)  script. This will register the COM-component, create the required registry edits to enable the CCG to use it.
+To use the plug-in, it needs to be registered on the server. This is done using the [install-plugin.ps1](./resources/install-plugin.ps1) script. This will register the COM-component, create the required registry edits to enable the CCG to use it.
 
 __Note:__ It will also set the identity of the COM-component to `NT AUTHORITY\NetworkService`. The default is the currently logged on user, which does not work if using the plug-in from automation like Azure DevOps etc.
 
