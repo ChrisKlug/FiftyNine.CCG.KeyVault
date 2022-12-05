@@ -4,9 +4,7 @@ This repo contains the code for a Container Credentials Guard plug-in that enabl
 
 ## Usage
 
-To use the plug-in, it needs to be registered on the server. This is done using the [install-plugin.ps1](./resources/install-plugin.ps1) script. This will register the COM-component, create the required registry edits to enable the CCG to use it.
-
-__Note:__ It will also set the identity of the COM-component to `NT AUTHORITY\NetworkService`. The default is the currently logged on user, which does not work if using the plug-in from automation like Azure DevOps etc.
+To use the plug-in, it needs to be registered on the server as a COM component, and as a CCG plug-in. This is done by using the [install-plugin.ps1](./resources/install-plugin.ps1) script. It will register the COM-component, set the component to run as _NT AUTHORITY\NetworkService_ and create the required registry edits to enable the CCG to use it.
 
 Finally, you also need to create a credential spec file. It should be located at `C:\ProgramData\Docker\CredentialSpecs`. It should look something like this
 
@@ -58,6 +56,10 @@ This should return a `NERR` response.
 ## Running unit tests
 
 To run the unit tests, you need to compile the application using the `Test` configuration. This removes the inheritance from `ServicedComponent`, allowing the code to be tested in a simple unit test.
+
+## More information
+
+There is a blog post covering this plug-in, and some other stuff if you want to know more about it. It is located at: [Running a Windows container with gMSA, on a non-domain joined host](https://fearofoblivion.com/running-a-windows-container-under-gmsa)
 
 ## Feedback
 
